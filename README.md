@@ -9,15 +9,15 @@ This project showcases how to design and implement a **production-oriented RAG s
 ## 🚀 Features
 
 - 📄 **PDF Ingestion & Processing** — Extracts and preprocesses document text  
-- ✂️ **Intelligent Chunking** — Splits text into semantically meaningful segments  
-- 🧬 **Embedding Generation** — Converts text into dense vector representations  
-- 🔍 **Semantic Retrieval** — Efficient similarity search using vector indexing  
-- 🤖 **Context-Aware Generation** — LLM responses grounded in retrieved content  
-- 💻 **Fully Local Execution** — No dependency on paid APIs or external services  
+-  **Intelligent Chunking** — Splits text into semantically meaningful segments  
+-  **Embedding Generation** — Converts text into dense vector representations  
+-  **Semantic Retrieval** — Efficient similarity search using vector indexing  
+-  **Context-Aware Generation** — LLM responses grounded in retrieved content  
+-  **Fully Local Execution** — No dependency on paid APIs or external services  
 
 ---
 
-## 🧠 Architecture
+##  Architecture
 
 ```
 PDF → Text Extraction → Chunking → Embeddings → Vector Store → Retrieval → LLM → Answer
@@ -33,7 +33,15 @@ This pipeline ensures that responses are **grounded, explainable, and contextual
 - **LangChain** — RAG pipeline orchestration  
 - **FAISS** — High-performance vector similarity search  
 - **Ollama** — Local LLM runtime  
-- **Llama 3** — Open-source large language model  
+- **Llama 3** — Open-source large language model
+
+##  Dataset
+
+This project was tested using the research paper:
+
+- **"Attention Is All You Need" (Vaswani et al., 2017)**
+
+This paper introduces the Transformer architecture, which serves as the foundation for modern LLMs.
 
 ---
 
@@ -104,32 +112,34 @@ This document provides an overview of...
 
 ## 📌 Core Concepts
 
-### 🔹 Retrieval-Augmented Generation (RAG)
+###  Retrieval-Augmented Generation (RAG)
 Combines information retrieval with language generation, allowing the model to answer questions using **external, domain-specific data**.
 
-### 🔹 Embeddings
+###  Embeddings
 Transforms text into numerical vectors, enabling **semantic similarity search** instead of keyword matching.
 
-### 🔹 Vector Database
+###  Vector Database
 Stores embeddings and supports **fast, scalable retrieval** of relevant context.
 
 ---
+### 💬 Example Usage
+What is multi-head attention?
 
-## 🚧 Future Improvements
+System Behavior:
 
-- 🌐 API layer with FastAPI  
-- 🖥️ Web-based user interface  
-- 📚 Multi-document support  
-- ⚡ Streaming responses  
-- 📊 Evaluation & monitoring (e.g., RAG metrics, latency, accuracy)  
+* Retrieves relevant chunks from the PDF
+* Displays retrieved context (debug mode)
+* Generates an answer grounded in the document
 
----
+Retrieval Debugging (Key Feature)
+The system prints retrieved chunks before generating the answer:
+[DEBUG] Retrieved context chunks:
 
-## 📸 Demo
+--- Chunk 1 ---
+...
 
-*(Add a screenshot or GIF demonstrating the interaction flow)*
-
----
+--- Chunk 2 ---
+...
 
 ## 🤝 Contributing
 
