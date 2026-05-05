@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📄 PDF Chat with RAG (Retrieval-Augmented Generation)
 
 An end-to-end AI application that enables natural language interaction with PDF documents using a **Retrieval-Augmented Generation (RAG)** pipeline powered by local LLMs.
