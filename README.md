@@ -153,6 +153,6 @@ MIT License
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Developed as part of an **AI Engineering learning path**, focusing on building **scalable, production-ready LLM applications** with real-world relevance.
